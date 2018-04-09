@@ -1,0 +1,122 @@
+17/05/16 19:22:36 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+rm: `zzzzzzzz_output*': No such file or directory
+17/05/16 19:22:38 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/05/16 19:22:38 INFO client.RMProxy: Connecting to ResourceManager at /10.20.13.123:9032
+17/05/16 19:22:39 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+17/05/16 19:22:39 INFO mapreduce.JobSubmitter: number of splits:32
+17/05/16 19:22:39 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1494776279275_0452
+17/05/16 19:22:39 INFO impl.YarnClientImpl: Submitted application application_1494776279275_0452
+17/05/16 19:22:39 INFO mapreduce.Job: The url to track the job: http://ferrari:9088/proxy/application_1494776279275_0452/
+17/05/16 19:22:39 INFO mapreduce.Job: Running job: job_1494776279275_0452
+17/05/16 19:22:45 INFO mapreduce.Job: Job job_1494776279275_0452 running in uber mode : false
+17/05/16 19:22:45 INFO mapreduce.Job:  map 0% reduce 0%
+17/05/16 19:24:10 INFO mapreduce.Job:  map 9% reduce 0%
+17/05/16 19:24:11 INFO mapreduce.Job:  map 19% reduce 0%
+17/05/16 19:24:12 INFO mapreduce.Job:  map 28% reduce 0%
+17/05/16 19:24:13 INFO mapreduce.Job:  map 38% reduce 0%
+17/05/16 19:24:14 INFO mapreduce.Job:  map 47% reduce 0%
+17/05/16 19:24:15 INFO mapreduce.Job:  map 50% reduce 0%
+17/05/16 19:24:16 INFO mapreduce.Job:  map 59% reduce 0%
+17/05/16 19:24:17 INFO mapreduce.Job:  map 63% reduce 0%
+17/05/16 19:24:18 INFO mapreduce.Job:  map 72% reduce 0%
+17/05/16 19:24:19 INFO mapreduce.Job:  map 81% reduce 0%
+17/05/16 19:24:21 INFO mapreduce.Job:  map 91% reduce 27%
+17/05/16 19:24:21 INFO mapreduce.Job: Task Id : attempt_1494776279275_0452_m_000031_0, Status : FAILED
+Error: java.lang.ArrayIndexOutOfBoundsException: -1
+	at PasswordCracker.PasswordCrackerUtil.getNextCandidate(PasswordCrackerUtil.java:101)
+	at PasswordCracker.PasswordCrackerUtil.findPasswordInRange(PasswordCrackerUtil.java:65)
+	at PasswordCracker.PasswordCrackerMapper.map(PasswordCrackerMapper.java:32)
+	at PasswordCracker.PasswordCrackerMapper.map(PasswordCrackerMapper.java:13)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+
+17/05/16 19:24:22 INFO mapreduce.Job:  map 97% reduce 27%
+17/05/16 19:24:24 INFO mapreduce.Job:  map 97% reduce 32%
+17/05/16 19:25:37 INFO mapreduce.Job: Task Id : attempt_1494776279275_0452_m_000031_1, Status : FAILED
+Error: java.lang.ArrayIndexOutOfBoundsException: -1
+	at PasswordCracker.PasswordCrackerUtil.getNextCandidate(PasswordCrackerUtil.java:101)
+	at PasswordCracker.PasswordCrackerUtil.findPasswordInRange(PasswordCrackerUtil.java:65)
+	at PasswordCracker.PasswordCrackerMapper.map(PasswordCrackerMapper.java:32)
+	at PasswordCracker.PasswordCrackerMapper.map(PasswordCrackerMapper.java:13)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+
+17/05/16 19:25:51 INFO mapreduce.Job: Task Id : attempt_1494776279275_0452_m_000031_2, Status : FAILED
+Error: java.lang.ArrayIndexOutOfBoundsException: -1
+	at PasswordCracker.PasswordCrackerUtil.getNextCandidate(PasswordCrackerUtil.java:101)
+	at PasswordCracker.PasswordCrackerUtil.findPasswordInRange(PasswordCrackerUtil.java:65)
+	at PasswordCracker.PasswordCrackerMapper.map(PasswordCrackerMapper.java:32)
+	at PasswordCracker.PasswordCrackerMapper.map(PasswordCrackerMapper.java:13)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:146)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:787)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:341)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1698)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+
+17/05/16 19:27:06 INFO mapreduce.Job:  map 100% reduce 100%
+17/05/16 19:27:07 INFO mapreduce.Job: Job job_1494776279275_0452 failed with state FAILED due to: Task failed task_1494776279275_0452_m_000031
+Job failed as tasks failed. failedMaps:1 failedReduces:0
+
+17/05/16 19:27:08 INFO mapreduce.Job: Counters: 39
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=3683255
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=2410
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=2046
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Job Counters 
+		Failed map tasks=4
+		Killed map tasks=1
+		Killed reduce tasks=1
+		Launched map tasks=36
+		Launched reduce tasks=1
+		Other local map tasks=36
+		Total time spent by all maps in occupied slots (ms)=3059248
+		Total time spent by all reduces in occupied slots (ms)=174334
+		Total time spent by all map tasks (ms)=3059248
+		Total time spent by all reduce tasks (ms)=174334
+		Total vcore-milliseconds taken by all map tasks=3059248
+		Total vcore-milliseconds taken by all reduce tasks=174334
+		Total megabyte-milliseconds taken by all map tasks=3132669952
+		Total megabyte-milliseconds taken by all reduce tasks=178518016
+	Map-Reduce Framework
+		Map input records=31
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=186
+		Input split bytes=2410
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=130101
+		CPU time spent (ms)=3381690
+		Physical memory (bytes) snapshot=8856899584
+		Virtual memory (bytes) snapshot=61277597696
+		Total committed heap usage (bytes)=6484918272
+	File Input Format Counters 
+		Bytes Read=0
+
+real	4m32.425s
+user	0m10.463s
+sys	0m0.842s

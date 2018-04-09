@@ -1,0 +1,60 @@
+20175052
+4
+2
+false
+25ed1bcb423b0b7200f485fc5ff71c8e
+zz
+
+real	0m0.134s
+user	0m0.236s
+sys	0m0.040s
+
+20175052
+4
+4
+false
+02c425157ecd32f259548b33402ff6d3
+zzzz
+
+real	0m0.607s
+user	0m2.488s
+sys	0m0.100s
+
+20175052
+4
+6
+false
+453e41d218e071ccfb2d1c99ce23906a
+zzzzzz
+
+real	8m11.444s
+user	32m53.004s
+sys	0m3.372s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="hadoopLib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../assign4/hadoopLib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../assign4/hadoopLib" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../assign4/hadoopLib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../assign4/hadoopLib" recursive="false" type="SOURCES" />
+  </library>
+</component>

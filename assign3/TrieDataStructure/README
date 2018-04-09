@@ -1,0 +1,146 @@
+#######################################################
+# BDSA Lab
+#
+# Homework 03 - TrieTree implementation 
+#######################################################
+
+In this assignment, you will implement Trie data structure, which is often used to store sequence of items.
+
+***********
+1. Overview
+***********
+
+A trie is a set data structure, constructed in a tree-like structure; keys stored in trie are sequence of items.
+The trie that you will implement in this assignment assumes that keys are sorted sequence of integers.
+A key -- a sequence of integers -- is stored in trie nodes in a path from root node to leaf nodes. 
+For an example see "https://en.wikipedia.org/wiki/Trie#/media/File:Trie_example.svg" which is a trie with string keys.
+
+With trie, you can quickly check the membership of a key by traversing from root node to leaf nodes.
+
+************
+2. Template Code 
+************
+
+In the template code, we provide the following classes:
+
+  ItemSet class
+  TrieNode class
+  Trie class
+
+ItemSet class:
+  This class represent keys stored in trie; i.e, it stores sorted integers. 
+  It has list of intergers (representing the key)
+  An instance of ItemSet class is stored in the leaf nodes of trie.
+  We assume that it has a fixed size
+
+
+TrieNode class
+- It represents nodes in Trie.
+
+- TrieNode maps an integer to child node -- it does the mapping by subclassing HashMap<Integer, NewTreeNode>.
+  It also defines the following fields.
+
+   1) itemSet : the key to store. Null for non-leaf nodes.
+   2) isLeafNode : True if the current node is a leaf, false otherwise.
+
+Trie class
+
+In this assignment, we assume that a trie has a fixed height (or size of ItemSet in leafNode). That is, a length of keys is fixed. (Originally, a trie is not)
+
+- To add a key into trie, you use add(ItemSet); it returns true if it adds the key, false if the trie already has the key. You need to implement this method.
+ 1) If key is not, it creates TrieNode and put the key values and node in parentNode.
+ 2) If you put everything up to the last key in ItemSet, it sets the current node as a leaf node and stores ItemSet in the current node.
+
+- To test the membership of a key, you use contains(ItemSet); it returns true if the key is in the trie. You need to implement this method.
+
+- Additionally you also need to implement the following function. It is not a trie function, but we will use the function in the next assignment.
+
+    void findItemSets (ArrayList<ItemSet> matchedItemSetList /* result will be store here */, 
+                       TrieNode trieRootNode /* must pass the root */, 
+                       List<Integer> transaction,
+					   int startIndex)
+
+    --> This method finds all the keys related to transaction (or sorted itemList) in the trie and they are stored in matchedItemSetList.
+        That is, it finds all the possible (ordered) combination of transactions that exist in the trie, and whose size equals the height of trie.
+		
+  For example, 
+
+  Suppose you have ItemSets and trie height is 2; ItemSet1 [1, 2], ItemSet2 [1, 3], ItemSet3 [2, 3] 
+  
+  And If you implement a trie, then
+
+  trie is like this :
+
+        +-------+
+        | Root  |                   Height 0
+        +-------+
+          |  \
+         1|   \ 2
+          |    \
+     +------+  +------+ 
+     | Node |  | Node |             Height 1
+     +------+  +------+
+       |   \        \
+      2|   3\       3\
+       |     \        \
+  +------+  +------+  +------+
+  | Leaf |  | Leaf |  | Leaf |
+  |[1,2] |  |[1,3] |  |[2,3] |      Height 2
+  +------+  +------+  +------+
+
+ 
+ If you call the findeItemSet(...) with transaction (or List[1, 2, 3, 4, 5]), then result stores matchedItemSetList; ArrayList{[1,2], [1,3], [2,3]}
+
+ If you call the findeItemSet(...) with transaction (or List[2, 3, 4, 5]), then result stores matchedItemSetList; ArrayList{[2,3]}
+
+ If you call the findeItemSet(...) with transaction (or List[4, 5]), then result stores matchedItemSetList; ArrayList{[]}
+
+ We assume that transaction is sorted in ascending order.
+
+
+********
+3. Requirements 
+*********
+
+- You need to fill in the blanks in the template code.
+  (Search the string 'COMPLETE' which marks the places where you need to implement your code) 
+
+- You must write a report describing your implementation. The report need to be in word format or pdf format.
+  (You don't need to analyze this data structure)
+
+- You must name your submission file as following: 
+
+   hw3_studentNumber.tar, hw3_studentNumber.pdf (or .docx)
+
+   and submit both files (hw3_studentNumber.tar, hw3_studentNumber.pdf)
+
+- You must use apache-ant for the compilation. The grading script will use ant for the compilation. 
+
+- You must fully describe the code you have implemented.
+
+- Test length of keys is 2, 3 and 4.
+  (java -jar TrieDataStructure.jar)
+
+
+*********
+4. Submission
+*********
+You must submit the report for this assignment as well as your source code.
+
+The report must be in PDF/Word format and include the following :
+
+- Describe the code you have implemented.
+ (You don't need to analyze this data structure)
+
+
+*********
+5. Grade
+*********
+
+Report 40% (tentative)
+Code implementation and correct execution 60% (tentative)
+
+
+If you have any questions, Please send an email to bongki@unist.ac.kr
+
+

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TrieDataStructure">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TrieDataStructure.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
